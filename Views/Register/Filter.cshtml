@@ -1,0 +1,27 @@
+﻿@model IEnumerable<MVCminiproject.Models.Register>
+
+
+<link href="~/Content/Site.css" rel="stylesheet" />
+<div id="Registerid" style="width: 100%;">
+    @{
+        var grid1 = new WebGrid(source: Model, canPage: true, rowsPerPage: 10, ajaxUpdateContainerId: "gridContent");
+
+        @grid1.GetHtml(mode: WebGridPagerModes.All,
+            tableStyle: "gridTable",
+            headerStyle: "gridHead",
+            footerStyle: "gridFooter",
+            rowStyle: "gridRow",
+            alternatingRowStyle: "gridAltRow",
+            htmlAttributes: new { id = "positionGrid" },
+            fillEmptyRows: false,
+            columns: grid1.Columns(
+             grid1.Column("Registerid", header: "Registerid"),
+             grid1.Column("Name", header: "Name"),
+               grid1.Column("Address", header: "Address"),
+             grid1.Column("Email", header: "Email"),
+             grid1.Column("Phoneno", header: "Phoneno"),
+              grid1.Column("City", header: "City"),
+             grid1.Column("State", header: "state")))
+
+    }
+</div>

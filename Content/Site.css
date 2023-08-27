@@ -1,0 +1,127 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+    background-color: #777;
+    border-color: #fff
+}
+.styled-table thead tr{
+    background-color:bisque;
+    color:antiquewhite;
+    text-align:left;
+}
+tr, th, td {
+    border: 2px solid orange;
+    background-color: antiquewhite;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+dd, dt { 
+    border: 2px solid orange;
+    background-color:aqua;
+
+}
+.form-horizontal {
+    border: 2px solid Tomato;
+    color: orangered;
+    background-color: lightgoldenrodyellow;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.gridTable {
+    margin: 5px;
+    padding: 10px;
+    border: 1px #c8c8c8 solid;
+    border-collapse: collapse;
+    min-width: 550px;
+    background-color: #fff;
+    color: #fff;
+    width: 100%;
+}
+
+.gridHead th {
+    font-weight: bold;
+    background-color: #030D8D;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+}
+
+.gridHead a:link, .gridHead a:visited, .gridHead a:active, .gridHead a:hover {
+    color: #fff;
+}
+
+.gridHead a:hover {
+    text-decoration: underline;
+}
+
+.gridTable tr.gridAltRow {
+    background-color: #efeeef;
+}
+
+.gridTable tr:hover {
+    background-color: #f6f70a;
+}
+
+.gridAltRow td {
+    padding: 10px;
+    margin: 5px;
+    color: #333;
+    text-align: left;
+}
+
+.gridRow td {
+    padding: 10px;
+    color: #333;
+    text-align: left;
+}
+
+.gridFooter td {
+    padding: 10px;
+    color: #ffffff;
+    font-size: 12pt;
+    text-align: center;
+    background-color: #228B22;
+}
+
+.gridFooter a {
+    font-weight: bold;
+    color: blue;
+    border: 2px #f00 solid;
+}
+
+
+element.style {
+}
+
+.main-heading-title {
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 3.5em;
+    letter-spacing: 0.02em;
+}
